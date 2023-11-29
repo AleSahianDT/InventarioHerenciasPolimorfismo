@@ -7,14 +7,17 @@ public class Producto {
     String codigo;
     int cantidad;
 
+    String tipo;
+
     String marca;
 
-    public Producto(String nombre, double precio, String codigo, int cantidad, String marca) {
+    public Producto(String nombre, double precio, String codigo, int cantidad, String marca, String tipo) {
         this.nombre = nombre;
         this.precio = precio;
         this.codigo = codigo;
         this.cantidad = cantidad;
         this.marca = marca;
+        this.tipo = tipo;
     }
 
     public Producto() {
