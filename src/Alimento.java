@@ -40,6 +40,24 @@ public class Alimento extends Producto{
         this.fechaExpiracion=sc.next();
     }
 
+    @Override
+    public void imprimirProducto() {
+        System.out.println("El producto alimenticio tiene las siguientes caracteristicas: ");
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Precio: "+this.precio);
+        System.out.println("Codigo: "+this.codigo);
+        System.out.println("Cantidad: "+this.cantidad);
+        System.out.println("Marca: "+this.marca);
+        System.out.println("Fecha elaboracion: "+this.fechaElaboracion);
+        System.out.println("Fecha expiracion: "+this.fechaExpiracion);
+    }
+
+    public void comprarProductoAlimento(){
+        if(this.verificarStock()){
+            System.out.println("Se puede proceder con la compra");
+        }
+    }
+
 
     public String getFechaElaboracion() {
         return fechaElaboracion;
